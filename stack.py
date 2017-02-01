@@ -25,8 +25,10 @@ class Stack(object):
     def peek(self):
         """Return the top item on this stack without removing it,
         or None if this stack is empty"""
-        # TODO: return top item, if any
-        pass
+        if self.is_empty():
+            return None
+        else:
+            return self.first()
 
     def push(self, item):
         """Push the given item onto this stack"""
