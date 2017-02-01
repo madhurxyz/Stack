@@ -20,8 +20,7 @@ class Stack(object):
 
     def length(self):
         """Return the number of items in this stack"""
-        # TODO: count number of items
-        pass
+        return self.size
 
     def peek(self):
         """Return the top item on this stack without removing it,
