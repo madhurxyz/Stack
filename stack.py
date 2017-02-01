@@ -1,4 +1,5 @@
 #!python
+from linkedlist import LinkedList
 
 class Stack(object):
 
@@ -15,8 +16,7 @@ class Stack(object):
 
     def is_empty(self):
         """Return True if this stack is empty, or False otherwise"""
-        # TODO: check if empty
-        pass
+        super(Stack, self).is_empty()
 
     def length(self):
         """Return the number of items in this stack"""
