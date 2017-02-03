@@ -2,7 +2,7 @@
 from linkedlist import LinkedList
 # class Stack(list):
     #push to end
-    #pop from end
+    #pop from end 
     #peek end
     # def __init__(self, iterable=None):
     #     """Initialize this stack and push the given items, if any"""
