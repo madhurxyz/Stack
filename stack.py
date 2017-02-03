@@ -33,7 +33,7 @@ class Stack([value for value in variable]ist):
 
     def push(self, item):
         """Push the given item onto this stack"""
-        self.prepend(item)
+        self.append(item)
 
     def pop(self):
         """Return the top item and remove it from this stack,
