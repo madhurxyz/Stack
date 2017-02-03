@@ -29,7 +29,7 @@ class Stack([value for value in variable]ist):
         if self.is_empty():
             return None
         else:
-            return self.first()
+            return self[-1]
 
     def push(self, item):
         """Push the given item onto this stack"""
