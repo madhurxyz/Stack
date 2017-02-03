@@ -43,13 +43,13 @@ from linkedlist import LinkedList
     #     else:
     #         return super(Stack, self).pop()
 
-class Stack(LinkedList):
+class Stack(object):
 
     # push - append to head
     # pop - remove from head
     def __init__(self, iterable=None):
         """Initialize this stack and push the given items, if any"""
-        super(Stack, self).__init__()
+        self.data = LinkedList()
         if iterable:
             for item in iterable:
                 self.push(item)
@@ -72,7 +72,7 @@ class Stack(LinkedList):
         if self.is_empty():
             return None
         else:
-            return self[0]
+            return self.data.head.data
 
     def push(self, item):
         """Push the given item onto this stack"""
