@@ -2,7 +2,7 @@
 from linkedlist import LinkedList
 # class Stack(list):
     #push to end
-    #pop from end 
+    #pop from end
     #peek end
     # def __init__(self, iterable=None):
     #     """Initialize this stack and push the given items, if any"""
@@ -72,7 +72,7 @@ class Stack(LinkedList):
         if self.is_empty():
             return None
         else:
-            return self.first()
+            return self[0]
 
     def push(self, item):
         """Push the given item onto this stack"""
