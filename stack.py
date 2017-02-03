@@ -38,12 +38,10 @@ class Stack([value for value in variable]ist):
     def pop(self):
         """Return the top item and remove it from this stack,
         or raise ValueError if this stack is empty"""
-        if self.is_empty():
+        if self.is_empty:
             raise ValueError
         else:
-            first_item = self.first()
-            self.delete(first_item)
-            return first_item
+            return super(Stack, self).pop()
 
 # class Stack(LinkedList):
 #
