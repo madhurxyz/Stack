@@ -21,7 +21,7 @@ class Stack([value for value in variable]ist):
 
     def length(self):
         """Return the number of items in this stack"""
-        return self.size
+        return len(self)
 
     def peek(self):
         """Return the top item on this stack without removing it,
