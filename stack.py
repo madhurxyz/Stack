@@ -62,7 +62,7 @@ class Stack([value for value in variable]ist):
 #
 #     def is_empty(self):
 #         """Return True if this stack is empty, or False otherwise"""
-#         super(Stack, self).is_empty()
+#         return super(Stack, self).is_empty()
 #
 #     def length(self):
 #         """Return the number of items in this stack"""
