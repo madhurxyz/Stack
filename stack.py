@@ -18,16 +18,19 @@ from linkedlist import LinkedList
 #         """Return a string representation of this stack"""
 #         return 'Stack({})'.format(self.length())
 #
+#     #O(1)
 #     def is_empty(self):
 #         """Return True if this stack is empty, or False otherwise"""
 #         if len(self.stack) == 0:
 #             return True
 #         return False
 #
+#     #O(1)
 #     def length(self):
 #         """Return the number of items in this stack"""
 #         return len(self.stack)
 #
+#     #O(1)
 #     def peek(self):
 #         """Return the top item on this stack without removing it,
 #         or None if this stack is empty"""
@@ -35,10 +38,12 @@ from linkedlist import LinkedList
 #             return None
 #         return self.stack[self.length() - 1]
 #
+#     #O(1)
 #     def push(self, item):
 #         """Push the given item onto this stack"""
 #         self.stack.append(item)
 #
+#     #O(1)
 #     def pop(self):
 #         """Return the top item and remove it from this stack,
 #         or raise ValueError if this stack is empty"""
@@ -61,16 +66,19 @@ class Stack(object):
         """Return a string representation of this stack"""
         return 'Stack({})'.format(self.length())
 
+    #O(1)
     def is_empty(self):
         """Return True if this stack is empty, or False otherwise"""
         if self.stack.length() == 0:
             return True
         return False
 
+    #O(1)
     def length(self):
         """Return the number of items in this stack"""
         return self.stack.length()
 
+    #O(1)
     def peek(self):
         """Return the top item on this stack without removing it,
         or None if this stack is empty"""
@@ -78,10 +86,12 @@ class Stack(object):
             return None
         return self.stack.tail.data
 
+    #O(1)
     def push(self, item):
         """Push the given item onto this stack"""
         self.stack.append(item)
 
+    #O(n)
     def pop(self):
         """Return the top item and remove it from this stack,
         or raise ValueError if this stack is empty"""
