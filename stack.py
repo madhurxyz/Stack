@@ -1,5 +1,8 @@
 #!python
 from linkedlist import LinkedList
+# push to end
+# pop from end
+# peek end
 
 # class Stack(object):
 #
